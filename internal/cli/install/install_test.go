@@ -736,8 +736,8 @@ func TestPinnedSkillsDocumentationMatchesDirectInstaller(t *testing.T) {
 		if !strings.Contains(content, skillsSourceCommit) {
 			t.Errorf("%s does not mention the pinned skills commit %q", path, skillsSourceCommit)
 		}
-		if !strings.Contains(content, "23") {
-			t.Errorf("%s does not mention verification of all 23 skills", path)
+		if !strings.Contains(content, "25 skills") {
+			t.Errorf("%s does not mention verification of all 25 skills", path)
 		}
 	}
 }
